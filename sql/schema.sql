@@ -1,9 +1,10 @@
 CREATE TABLE criminals(
     criminalID BIGSERIAL NOT NULL PRIMARY KEY,
-    int NOT NULL,
+    age int NOT NULL,
     status varchar(30) NOT NULL,
     address varchar(150),
     date_admission DATE NOT NULL,
+    crimeID BIGINT REFERENCES CrimeDatabase(id),
     return_count int);
 
 CREATE TABLE CrimeDatabase (

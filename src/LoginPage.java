@@ -8,7 +8,7 @@ public class LoginPage implements ActionListener{
 
     JFrame frame = new JFrame();
     JButton loginBut = new JButton("Login");
-    JButton resetBut = new JButton("Reset");
+    JButton registerBut = new JButton("Sign Up");
     JTextField userIDField = new JTextField();
     JPasswordField userPasswordField = new JPasswordField();
     JLabel userIdLabel = new JLabel("userID:");
@@ -24,12 +24,23 @@ public class LoginPage implements ActionListener{
         messageLabel.setBounds(150,275,275,55);
         messageLabel.setFont(new Font(null,Font.ITALIC,35));
 
-        userIDField.setBounds(145,120,220,45);
-        userPasswordField.setBounds(145,120,220,45);
+        userIDField.setBounds(125,100,200,30);
+        userPasswordField.setBounds(125,150,200,30);
+
+        loginBut.setBounds(125,200,125,50);
+        loginBut.addActionListener(this);
+        loginBut.setFocusable(false);
+
+        registerBut.setBounds(225,200,125,50);
+        registerBut.setFocusable(false);
+        registerBut.addActionListener(this);
 
         frame.add(userIdLabel);
         frame.add(userPasswordLabel);
-
+        frame.add(userIDField);
+        frame.add(userPasswordField);
+        frame.add(loginBut);
+        frame.add(registerBut);
 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 800);
