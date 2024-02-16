@@ -39,7 +39,7 @@ VALUES
     ('Robbery with aggravated assault using a deadly weapon'),
     ('Shoplifting merchandise valued over $1,000'),
     ('Carjacking resulting in injury'),
-    ('Cyberstalking leading to mental distress'),
+    ('Cyber-stalking leading to mental distress'),
     ('Hacking into financial institutions for monetary gain'),
     ('Domestic violence resulting in serious injury'),
     ('Phishing for personal financial information'),
