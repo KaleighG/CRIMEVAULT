@@ -1,5 +1,6 @@
 CREATE TABLE criminals(
     criminalID BIGSERIAL NOT NULL PRIMARY KEY,
+    fName varchar(30), NOT NULL,
     age int NOT NULL,
     status varchar(30) NOT NULL,
     address varchar(150),
@@ -11,6 +12,7 @@ CREATE TABLE CrimeDatabase (
     id BIGSERIAL NOT NULL PRIMARY KEY,
     crime VARCHAR(900)
 );
+
 
 -----INPUTS FOR CRIMEDATABASE----
 VALUES
