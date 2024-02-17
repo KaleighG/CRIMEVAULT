@@ -17,7 +17,7 @@ public class Main {
     private static User[] users = {
             new User("user1", "password1", true),
             new User("user2", "password2", true),
-            new User("user3", "password3", false)
+            new User("user3", "password3", true)
     };
 
     private static Scanner scanner = new Scanner(System.in);
